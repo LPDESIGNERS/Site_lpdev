@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPDev - Games e Informática</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>LPDev</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="#products" onclick="toggleDropdown(event)">Produtos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="filterProducts('monitores')">Monitores</a></li>
+                        <li><a href="#" onclick="filterProducts('placa-mae')">Placa mãe</a></li>
+                        <li><a href="#" onclick="filterProducts('memoria-ram')">Memória RAM</a></li>
+                        <li><a href="#" onclick="filterProducts('ssd')">SSD</a></li>
+                        <li><a href="#" onclick="filterProducts('placa-de-video')">Placa de vídeo</a></li>
+                        <li><a href="#" onclick="filterProducts('gabinetes')">Gabinetes</a></li>
+                        <li><a href="#" onclick="filterProducts('perifericos')">Periféricos</a></li>
+                        <li><a href="#" onclick="filterProducts('smartphones')">Smartphones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao LPDev</h2>
+            <p>Seu site para as melhores recomendações de produtos de games e informática.</p>
+        </section>
+        <section id="products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product monitores">
+                    <img src="imagens/Monitor_Lg_75hz.jpg" alt="Produto 1">
+                    <h3>Monitor LG 75Hz</h3>
+                    <p>MONITOR LG GAMER 21.5' 22MP410-B.AWZM FULL HD 75HZ AMD FREESYNC</p>
+                    <a href="https://amzn.to/3XOJ4RI" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product placa-mae">
+                    <img src="images/product2.jpg" alt="Produto 2">
+                    <h3>Placa mãe 1</h3>
+                    <p>Descrição da Placa mãe 1</p>
+                    <a href="https://afiliado.com/produto2" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product memoria-ram">
+                    <img src="images/product3.jpg" alt="Produto 3">
+                    <h3>Memória RAM 1</h3>
+                    <p>Descrição da Memória RAM 1</p>
+                    <a href="https://afiliado.com/produto3" class="affiliate-link">Compre Agora</a>
+                </div>
+                <!-- Adicione mais produtos em suas respectivas categorias -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através do email: contato@lpdev.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 LPDev. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
