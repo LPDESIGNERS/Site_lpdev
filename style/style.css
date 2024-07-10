@@ -104,3 +104,21 @@ footer {
     padding: 10px;
     text-align: center;
 }
+nav ul .dropdown-content .dropdown-submenu {
+    position: relative;
+}
+
+nav ul .dropdown-content .submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #1F1F1F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content .submenu-content li a {
+    padding: 12px 16px;
+}
