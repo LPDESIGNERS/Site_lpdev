@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPDev - Games e Informática</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <h1>LPDev</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="#products" onclick="toggleDropdown(event)">Produtos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#" onclick="filterProducts('monitores')">Monitores</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" onclick="toggleSubmenu(event)">Placa mãe</a>
+                            <ul class="submenu-content">
+                                <li><a href="#" onclick="filterProducts('placa-mae-intel')">Intel</a></li>
+                                <li><a href="#" onclick="filterProducts('placa-mae-amd')">AMD</a></li>
+                            </ul>
+                            <li class="dropdown-submenu">
+                                <a href="#" onclick="toggleSubmenu(event)">Placa de Video</a>
+                                <ul class="submenu-content">
+                                    <li><a href="#" onclick="filterProducts('placa-video-nvidia')">Nvidia</a></li>
+                                    <li><a href="#" onclick="filterProducts('placa-video-amd')">AMD</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="#" onclick="filterProducts('memoria-ram')">Memória RAM</a></li>
+                        <li><a href="#" onclick="filterProducts('ssd')">SSD</a></li>
+                        <li><a href="#" onclick="filterProducts('gabinetes')">Gabinetes</a></li>
+                        <li><a href="#" onclick="filterProducts('perifericos')">Periféricos</a></li>
+                        <li><a href="#" onclick="filterProducts('smartphones')">Smartphones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao LPDev</h2>
+            <p>Seu site para as melhores recomendações de produtos de games e informática!</p>
+        </section>
+        <section id="products">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product monitores">
+                    <img src="/imagens/Monitor_Lg_75hz.jpg" alt="Monitor">
+                    <h3>Monitor LG 75Hz</h3>
+                    <p>MONITOR LG GAMER 21.5' 22MP410-B.AWZM FULL HD 75HZ AMD FREESYNC</p>
+                    <a href="https://amzn.to/3XOJ4RI" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product monitores">
+                    <img src="/imagens/Samsung_monitor.jpg" alt="Monitor">
+                    <h3>Monitor Samsung T350</h3>
+                    <p>Samsung T350 - Monitor Gamer 27" FHD,75Hz, HDMI, VGA, Freesync, Preto</p>
+                    <a href="https://amzn.to/4cRSVKN" class="affiliate-link">Compre Agora</a>
+                    </div>
+                    <div class="product monitores">
+                        <img src="/imagens/Monitor AOC.jpg" alt="Monitor">
+                        <h3>Monitor Gamer AOC Hero 27</h3>
+                        <p>Monitor Gamer AOC Hero 27" 165Hz 1ms Ajuste de Altura 27G2S/BK</p>
+                        <a href="https://amzn.to/3WbNKQe"></a>
+                        </div>
+                        <div class="product monitores">
+                            <img src="/imagens/Mancer_Monitor.jpg" alt="Monitor">
+                            <h3>Monitor Gamer Mancer Horizon Z21</h3>
+                            <p>Monitor Gamer Mancer Horizon Z21, 21.45 Pol. Va, Full HD, 1ms, 75Hz, FreeSync, VGA/HDMI, MCR-HZN21-BL1</p>
+                            <a href="https://amzn.to/3WbNKQe"></a>
+                            </div>
+
+                
+                <div class="product placa-mae-intel">
+                    <img src="/imagens/Placa_Mãe_H610.jpg" alt="H610M">
+                    <h3>Placa Mãe Gigabyte H610M</h3>
+                    <p>Placa Mãe Gigabyte H610M H DDR4, Chipset H610, Intel LGA 1700, mATX, DDR4</p>
+                    <a href="https://amzn.to/3VVUoZI" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product placa-mae-intel">
+                    <img src="/imagens/B660m.jpg" alt="B660M">
+                    <h3>Placa Mãe AsRock B660M</h3>
+                    <p>Placa Mãe AsRock B660M Phantom Gaming 4 (LGA1700/DDR4/HDMI/DP/M.2)</p>
+                    <a href="https://amzn.to/3Lh9ELH" class="affiliate-link">Compre Agora</a>
+                </div>
+
+                <div class="product placa-mae-amd">
+                    <img src="/imagens/A520.jpg" alt="A520M">
+                    <h3>Placa Mãe Gigabyte A520M</h3>
+                    <p>Placa Mãe Gigabyte A520M S2H DDR4, AMD, AM4</p>
+                    <a href="https://amzn.to/4eUVa1K" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product placa-mae-amd">
+                    <img src="/imagens/B550m.jpg" alt="B550M">
+                    <h3>Placa Mãe Gigabyte B550M</h3>
+                    <p>Placa Mãe Gigabyte B550M AORUS Elite, Chipset B550, AMD AM4, mATX, DDR4</p>
+                    <a href="https://amzn.to/3S35pqV" class="affiliate-link">Compre Agora</a>
+                </div>
+
+                <div class="product placa-video-nvidia">
+                    <img src="/imagens/2060mancer.jpg" alt="Mancer-2060">
+                    <h3>PLACA DE VIDEO MANCER RTX 2060 SUPER</h3>
+                    <p>PLACA DE VIDEO MANCER RTX 2060 SUPER HEIMDALL SS, 8GB, GDDR6, 256-BIT, MCR-RTX2060SUPER-HMDLLSS</p>
+                    <a href="https://amzn.to/3W05Yms" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product placa-video-nvidia">
+                    <img src="/imagens/3060.jpg" alt="RTX3060">
+                    <h3>Placa de Vídeo Gainward - GeForce RTX 3060</h3>
+                    <p>Placa de Vídeo Gainward - GeForce RTX 3060, 12GB GDDR6, GHOST Series</p>
+                    <a href="https://amzn.to/3zL1Or5" class="affiliate-link">Compre Agora</a>
+                </div>
+
+                <div class="product placa-video-amd">
+                    <img src="/imagens/rx6600amd.jpg" alt="rx6600amd">
+                    <h3>Placa de Vídeo AMD XFX Radeon RX 6600 8GB DDR6 - RX66XL8LFDQ</h3>
+                    <p>Placa de Vídeo AMD XFX Radeon RX 6600 8GB DDR6 - RX66XL8LFDQ</p>
+                    <a href="https://amzn.to/4cOFLyJ" class="affiliate-link">Compre Agora</a>
+                </div>
+
+                <div class="product memoria-ram">
+                    <img src="/imagens/Memoria_mancer.jpg" alt="RAM 8GB">
+                    <h3>Memoria Mancer Dantalion Z</h3>
+                    <p>Memoria Mancer Dantalion Z, 8GB (1x8GB), DDR4, 3200MHz, C16, MCR-DTLZ-8GB</p>
+                    <a href="https://amzn.to/3LhtGG0" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product memoria-ram">
+                    <img src="/imagens/memoria_asgard.jpg" alt="RAM 16GB">
+                    <h3>Memoria Ram Asgard 16gb</h3>
+                    <p>Memória Ram 16gb (2x8gb) Asgard Loki W2 Rgb 3200mhz Cl16 Ddr4</p>
+                    <a href="https://amzn.to/3VYAVaE" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product memoria-ram">
+                    <img src="/imagens/Memoria_Fury.jpg" alt="RAM 16GB">
+                    <h3>Memoria Ram Fury 16gb</h3>
+                    <p>KF432C16BB/16 - Memória de 16GB DIMM DDR4 3200Mhz FURY Beast 1,35V 1Rx8 288 pinos para desktop/gamers, Preto</p>
+                    <a href="https://amzn.to/4cunma0" class="affiliate-link">Compre Agora</a>
+                </div>
+
+                <div class="product ssd">
+                    <img src="/imagens/SSD_kingston.jpg" alt="SSD 460gb">
+                    <h3>SSD KINGSTON 460gb</h3>
+                    <p>HD SSD Kingston SA400S37 480GB</p>
+                    <a href="https://amzn.to/3Lhuo68" class="affiliate-link">Compre Agora</a>
+                </div>
+                <div class="product ssd">
+                    <img src="/imagens/ssd_mancer.jpg" alt="SSD 1TB">
+                    <h3>SSD Mancer</h3>
+                    <p>SSD Mancer Reaper C, 1TB, 2.5, Sata III6GB/s, Leitura 480MB/s, Gravacao 450MB/s, MCR-RPRC-1TB</p>
+                    <a href="https://amzn.to/460QFPg" class="affiliate-link">Compre Agora</a>
+                </div>
+                
+                    <div class="product perifericos">
+                        <img src="/imagens/Teclado_logitech_simples.jpg" alt="Teclado logitech" width="300px " height="200px">
+                        <h3>Teclado com fio USB Logitech K120</h3>
+                        <p>Teclado com fio USB Logitech K120, Resistente à Respingos, Barra de Espaço Curva, Compatível com PC e Notebook, Layout ABNT2</p>
+                        <a href="https://amzn.to/3xCQmxm" class="affiliate-link">Compre Agora</a>
+                    </div>
+                    <div class="product perifericos">
+                        <img src="/imagens/Teclado_Redragon.jpg" alt="Teclado Redragon">
+                        <h3>Teclado Redragon</h3>
+                        <p>Teclado Gamer Membrana Redragon Dyaus 2 ABNT2 K509RGB, Preto</p>
+                        <a href="https://amzn.to/3WdU6P1" class="affiliate-link">Compre Agora</a>
+                    </div>
+                    <div class="product perifericos">
+                        <img src="/imagens/teclado_mecanico_indicado.jpg" alt="Teclado mecanico">
+                        <h3>Teclado Mecânico Gamer</h3>
+                        <p>Teclado Mecânico Gamer Switch Blue Led Rgb 7 Cores Rainbow 12 Funções Anti Ghosting Abnt2 Usb para Pc Computador Notebook Mac</p>
+                        <a href="https://amzn.to/3VYJRNq" class="affiliate-link">Compre Agora</a>
+                    </div>
+
+                    <div class="product perifericos">
+                        <img src="/imagens/mousepad.jpg" alt="Mouse Pad Havit">
+                        <h3>Mousepad Havit</h3>
+                        <p>Havit HV-MP830 - Mouse Pad Professional Gaming, 30x90 cm</p>
+                        <a href="https://amzn.to/4f8MVPV" class="affiliate-link">Compre Agora</a>
+                    </div>
+                    <div class="product perifericos">
+                        <img src="/imagens/mousepad_mapa_mundi.jpg" alt="Mouse Pad Mundi">
+                        <h3>Mouse Pad Gamer Extra Grande</h3>
+                        <p>Mouse Pad Gamer Extra Grande 700x350x3mm Bordas Costuradas e Base Antiderrapante Exbom MP7035C Mapa Mundi</p>
+                        <a href="https://amzn.to/3WeAb2y" class="affiliate-link">Compre Agora</a>
+                    </div>
+
+                    <div class="product perifericos">
+                        <img src="/imagens/mouse_logitech.jpg" alt="Mouse Logitech">
+                        <h3>Mouse com fio USB Logitech M90</h3>
+                        <p>Mouse com fio USB Logitech M90 com Design Ambidestro e Facilidade Plug and Play</p>
+                        <a href="https://amzn.to/4eUkB3k" class="affiliate-link">Compre Agora</a>
+                    </div>
+                    <div class="product perifericos">
+                        <img src="/imagens/mouse_redragon.jpg" alt="Mouse Redragon">
+                        <h3>Redragon MOUSE GAMER GRIFFIN</h3>
+                        <p>Redragon MOUSE GAMER GRIFFIN PRETO COM LED RGB - M607, UNICO</p>
+                        <a href="https://amzn.to/3xSUVn9" class="affiliate-link">Compre Agora</a>
+                    </div>
+
+                <!-- Adicione mais produtos em suas respectivas categorias -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através do email: contato@lpdev.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 LPDev. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
